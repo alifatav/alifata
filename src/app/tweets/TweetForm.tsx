@@ -36,8 +36,8 @@ export default function TweetForm() {
 
  return (
   <Fragment>
-   <div className="flex items-center justify-center round-md ">
-    <form className="flex items-center m-2 shadow-md p-4 rounded-md bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition duration-300 hover:scale-105 hover:text-white" onSubmit={handleForm}>
+   <div className="flex items-center justify-center round-md p-4">
+    <form className="flex items-center shadow-md p-4 rounded-md bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 transition duration-300 hover:scale-105 hover:text-white" onSubmit={handleForm}>
      <input
       type="text"
       className="border p-2 mr-2 rounded-md text-black"
@@ -45,10 +45,10 @@ export default function TweetForm() {
       value={text}
       onChange={(e) => setText(e.target.value)}
      />
-     <button type='submit' className="px-4 py-2 font-bold">
+     <button type='submit' className="p-2 font-bold">
       create
      </button>
-    </form>
+    </form>    
    </div>
 
    <div className="mt-6">
