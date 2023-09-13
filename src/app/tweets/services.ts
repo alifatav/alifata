@@ -23,7 +23,7 @@ export async function getTweets(){
   (doc: QueryDocumentSnapshot) => ({ id: doc.id, ...doc.data() } as TweetData)
  );
 
- return tweets;
+ return { tweets };
 }
 
 export async function  createTweet(uid: string, text: string) {
