@@ -1,13 +1,14 @@
 import Link from "next/link"
 
-export default function RedirectToHome(){
+export default function NotFound(){
  return (
   <div className="flex items-center justify-center">
-   <div className="text-center">
-    <h1>maaf halaman tidak ditemukan 😓</h1>
-    <button className="p-1 rounded-md hover:bg-blue-500 border-solid border-blue-500">
+   <div>
+    <h1 className="text-2xl font-bold mb-4">sorry, page not found 😓</h1>
+    <span>back to 👉🏻 </span>
+    <button className="p-4 rounded-lg shadow-lg bg-gradient-to-r from-blue-400 via-purple-500 to-pink-400 transition-none duration-300 hover:scale-105 hover:text-white">
      <Link href='/'>
-      🏠halaman utama
+      🏠homepage
      </Link>
     </button>
    </div>

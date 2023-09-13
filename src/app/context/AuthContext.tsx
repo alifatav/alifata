@@ -4,13 +4,13 @@ import { createContext, useContext, useEffect, useState, ReactNode } from 'react
 import { onAuthStateChanged, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signOut } from 'firebase/auth';
 import { auth } from '@alifata/app/lib/firebase'; 
 
-interface User {
+type User = {
  uid: string;
  displayName: string;
  email: string;
 }
 
-interface AuthContextProps {
+type AuthContextProps = {
  user: User | null;
  loading: boolean;
  login: (email: string, password: string) => Promise<void>;
@@ -62,7 +62,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
 export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
-    throw new Error('useAuth harus digunakan dalam AuthProvider');
+    throw new Error("useAuth must be used in AuthProvider");
   }
   return context;
 }
