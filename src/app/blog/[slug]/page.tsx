@@ -20,7 +20,7 @@ export default async function Page({ params }: { params: { slug: string }}) {
   <main className="min-h-screen">
    <div className="max-w-4xl mx-auto">
     <div className="flex items-center p-2">
-     <article className="prose lg:prose-xl">
+     <article className="prose lg:prose-xl select-none">
       <ReactMarkdown >
        {content}
       </ReactMarkdown>
