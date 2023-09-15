@@ -13,6 +13,15 @@ export async function getBlogPosts(){
 
  const query = await notion.databases.query({ 
   database_id: notionDatabaseId,
+  filter: {
+   property: "Status",
+   status: {
+    equals: "Published"
+   }
+  },
+  sorts: [
+   { property: "Updated", direction: "descending"}
+  ]
  });
 
  const notionPages = query.results as NotionPage[];

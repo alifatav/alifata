@@ -21,7 +21,7 @@ export default async function Page() {
       <h1 className="font-extrabold text-xl md:text-4xl text-center">🗞️ALIFATA&apos;s BLOG</h1>
      </div>
 
-     <div className="mt-12 max-w-lg mx-auto grid gap-6 md:grid-cols-2 md:max-w-none lg:grid-cols-3 lg:max-w-none">
+     <div className="mt-12 max-w-md mx-auto grid gap-5 md:grid-cols-2 md:max-w-none">
       {
        posts.map((post: BlogPost) => (
         <BlogCard key={post.id} post={post} />
