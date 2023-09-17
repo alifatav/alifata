@@ -10,12 +10,7 @@ async function getData(slug: string) {
 
 export default async function Page({ params }: { params: { slug: string }}) {
  const { content  } = await getData(params.slug);
-
- const preventCopyPaste = (e: ClipboardEvent<HTMLInputElement>) => {
-  e.preventDefault()
-  alert("Copying and pasting is not allowed!")
-}
-
+ 
  return (
   <main className="min-h-screen">
    <div className="max-w-4xl mx-auto">

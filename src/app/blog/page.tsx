@@ -18,7 +18,7 @@ export default async function Page() {
    <div className="min-h-screen">
     <div className="max-w-5xl mx-auto">
      <div className="flex items-center justify-center">
-      <h1 className="font-extrabold text-xl md:text-4xl text-center">🗞️ALIFATA&apos;s BLOG</h1>
+      <h1 className="font-extrabold text-xl md:text-4xl text-center">🗞️BLOGs</h1>
      </div>
 
      <div className="mt-12 max-w-md mx-auto grid gap-5 md:grid-cols-2 md:max-w-none">
